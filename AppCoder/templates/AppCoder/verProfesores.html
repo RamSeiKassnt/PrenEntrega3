@@ -1,0 +1,19 @@
+{% extends "AppCoder/padre.html" %} 
+
+{% block titulo %}
+Profesores
+{% endblock %} 
+
+{% block subtitulo %}
+
+Nuestros cuerpo docente cuenta con el apoyo de CoderHouse
+{% for Profes in listaProfes %}
+    <p style="color: bisque;"> Nombre: {{Profes.nombre}} --> Apellido: {{Profes.apellido}} --> Profesión: {{Profes.profesion}} </p>
+{% endfor %}
+<nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
+        <a class="btn btb-primary" href="{% url 'Nuevo Profe'%}">Nuevo Docente</a>
+    </div>
+</nav>
+
+{% endblock %} 

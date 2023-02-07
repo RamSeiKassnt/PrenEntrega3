@@ -1,0 +1,20 @@
+{% extends "AppCoder/padre.html" %} 
+
+{% block titulo %}
+Entregas Destacadas
+{% endblock %} 
+
+{% block subtitulo %}
+
+
+{% for Entre in listaEntregas %}
+    <p style="color: bisque;"> Nombre: {{Entre.nombre}} --> Fecha: {{Entre.fecha}} --> Entregado: {{Entre.entregado}}</p>
+
+{% endfor %}
+<nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
+        <a class="btn btb-primary" href="{% url 'Nueva Entrega'%}">Nueva Entrega</a>
+    </div>
+</nav>
+
+{% endblock %} 

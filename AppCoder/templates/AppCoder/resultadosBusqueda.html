@@ -1,0 +1,19 @@
+{% extends "AppCoder/padre.html" %} 
+
+{% block titulo %}
+
+<p>Estamos buscando a la Camada numero {{camada}}</p>
+
+{% endblock %} 
+
+{% block subtitulo %}
+
+<ul>
+    {% for x in resultado %}
+        <li style="color: aquamarine;">Nombre del Curso:{{x.nombre}} --> Comisión N°:{{x.comision}}</li>
+    {% endfor %}
+</ul>
+    
+{% endblock %}
+
+

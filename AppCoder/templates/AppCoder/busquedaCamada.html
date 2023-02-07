@@ -1,0 +1,14 @@
+{% extends "AppCoder/padre.html" %} 
+
+{% block titulo %}
+Buscar Camada
+{% endblock %} 
+
+{% block subtitulo %}
+<form action="/AppCoder/resultados_busqueda/" method="GET"> 
+    
+    <input type="number" name="camada">
+    <input type="submit" value="Buscar">
+</form>
+
+{% endblock %}

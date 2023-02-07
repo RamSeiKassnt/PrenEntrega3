@@ -1,0 +1,21 @@
+{% extends "AppCoder/padre.html" %} 
+
+{% block titulo %}
+Nuestros Alumnos Destacados
+{% endblock %} 
+
+{% block subtitulo %}
+
+
+{% for Alumnos in listaAlumnos %}
+    <p style="color: bisque;"> Nombre: {{Alumnos.nombre}} --> Apellido: {{Alumnos.apellido}} </p>
+
+{% endfor %}
+
+<nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
+        <a class="btn btb-primary" href="{% url 'Nuevo Estudiante'%}">Nuevo Estudiante</a>
+    </div>
+</nav>
+
+{% endblock %} 
